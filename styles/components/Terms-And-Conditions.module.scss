@@ -1,0 +1,138 @@
+.about-us-text-container{
+    position: absolute;
+    top: 40%;
+    margin-inline-start: 30px;
+    width: auto;
+
+    .about-us-text{
+        color: white;
+    }
+
+}
+
+.terms-and-conditions-container{
+    padding: 35px;
+    width: 100%;
+    box-shadow: 0px 1px 9px 0px #c7c3c3;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    text-align: justify;
+    p{
+        margin-block-end: 20px;
+    }
+}
+
+// .have-a-product{
+//     position: relative;
+//     background-color: #f8d04b;
+//     min-height: 288px;
+//     border-radius: 17px;
+//     display: flex;
+//     // align-items: center;
+//     flex-direction: column;
+
+//     h1{
+//         color: var(--dark-neutral-1);
+//         font-size: 56px;
+//     }
+//     span{
+//         color: var(--dark-neutral-1);
+//         font-size: 28px;
+//     }
+
+//     .hap-text-container{
+//         display: flex;
+//         flex-direction: column;
+//         padding-block-start: 30px;
+//         padding-inline-start: 110px;
+
+//     }
+
+//     Button{
+//         width: fit-content;
+//         border-radius: 4px;
+//         outline: none;
+//         border: none;
+//         height: 51px;
+//         background-color: var(--dark-neutral-1);
+//         span{
+//             color: white !important;
+//             font-size: 20px;
+//         }
+//         margin-block-end: 20px;
+//     }
+//     img{
+//         position: absolute;
+//         height: 288px;
+//         object-fit: fill;
+//         width: 391px;
+//         right: 0px;
+//         border-radius: 0px 17px 17px 0px;
+//     }
+// }
+
+
+.have-a-product{
+    position: relative;
+    background-color: #f8d04b;
+    min-height: 288px;
+    border-radius: 17px;
+    display: flex;
+    // align-items: center;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 95% auto;
+    // grid-column-gap: 10%;
+    
+    
+    h1{
+        color: var(--dark-neutral-1);
+        font-size: 56px;
+    }
+    span{
+        color: var(--dark-neutral-1);
+        font-size: 28px;
+    }
+
+    img{
+        height: 100%;
+        max-height: 288px;
+        border-radius: 0px 17px 17px 0px;
+        position: absolute;
+        right: 0px;
+        // padding: 0px;
+    }
+
+    .hap-text-container{
+        display: flex;
+        flex-direction: column;
+        padding-block-start: 24px;
+        padding-inline-start: 110px;
+
+        Button{
+            width: fit-content;
+            border-radius: 4px;
+            outline: none;
+            border: none;
+            height: 51px;
+            background-color: var(--dark-neutral-1);
+            span{
+                color: white !important;
+                font-size: 20px;
+            }
+            margin-block-end: 20px;
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 1222px) {
+    .have-a-product{
+        img{
+            display: none;
+        }
+    }
+  }
+

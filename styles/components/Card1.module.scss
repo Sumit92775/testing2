@@ -1,0 +1,31 @@
+.main-content-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+
+    .clickable{
+        cursor: pointer;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 80% auto;
+
+        .switch-container{
+            display: flex !important;
+            justify-content: space-evenly !important;
+            align-items: center !important;
+        }
+    }
+
+    .social-media-icon-container{
+        display: flex !important;
+        align-items: center !important;
+        flex-direction: row !important;
+        margin-block-start: 10px;
+    }
+
+    
+}

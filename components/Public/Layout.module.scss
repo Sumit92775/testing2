@@ -1,0 +1,28 @@
+.main-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-width: 800px;
+}
+.main-content {
+    // grid-column-start: 1;
+    // grid-column-end: 3;
+    // grid-row-start: 2;
+    // grid-column-end: 3;
+    // padding: 0 28px;
+}
+.header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position: sticky;
+    background-color: var(--white);
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.menubar {
+    float: left;
+    ul{
+        width: 1200px;
+    }
+}

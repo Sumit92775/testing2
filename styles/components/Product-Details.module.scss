@@ -1,0 +1,87 @@
+.container{
+    display: grid;
+    grid-template-columns: 2.3fr 1fr;
+    height: fit-content;
+
+    .left-container{
+        // background-color: blue;
+    }
+    .right-container{
+        padding-inline-start: 60px;
+        // background-color: brown;
+
+        .t1-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-block-start: 22px;
+
+            h6,h5{
+                width: fit-content;
+            }
+
+            Input{
+                height: 43px;
+                margin-inline-end: 20px;
+                border-radius: 8px;
+            }
+
+            Button{
+                border-radius: 8px;
+                background-color: var(--secondary-1);
+                color: var(--dark-neutral-1);
+            }
+        }
+        .t11-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // margin-block-start: 22px;
+
+            h6,h5{
+                width: fit-content;
+            }
+
+        }
+    }
+}
+
+.df-address-container{
+    // width: 150px;
+    // max-width: 200px;
+    // padding-inline-end: 5px !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    div{
+        display: flex;
+        // width: fit-content;
+        // grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        // grid-column-gap: 30px;
+        // text-align: center;
+        span{
+            width: fit-content;
+        }
+    }
+}
+
+.add-address-modal-top-container{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-inline-start: 10px;
+    gap: 10px;
+}
+
+.form-container{
+    padding-inline-start: 10px;
+    padding-inline-end: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-column-gap: 40px;
+    margin-block-end: 20px;
+}
+.add-address-modal-top-container::-webkit-scrollbar {
+    display: none;
+  }

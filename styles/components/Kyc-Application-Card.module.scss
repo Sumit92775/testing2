@@ -1,0 +1,116 @@
+.kyc-application-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+ .form-grid-container{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     grid-column-gap: 70px;
+     margin-block-start: 12px;
+
+     Input{
+         height: 43px !important;
+     }
+
+    }
+ 
+.btn-container{
+    Button{
+        width: 100%;
+    }
+ }
+
+ .upload-document-container{
+     height: fit-content;
+     border-radius: 12px;
+     border: 1px solid var(--primary-1);
+
+     .udc-t{
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        margin-block-start: 34px;
+        padding-inline-start: 40px;
+        padding-inline-end: 40px;
+         
+        .img-container{
+            height: 250px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .img1{
+                background-color: var(--red-4);
+                height: 90%;
+                border-radius: 26px;
+            }
+
+            .txt1{
+                padding-block-start: 5px;
+                height: 10%;
+            }
+            .img2{
+                background-color: var(--green-4);
+                height: 90%;
+                border-radius: 26px;
+            }
+
+            .txt2{
+                display: flex;
+                // align-items: center;
+                padding-block-start: 5px;
+                height: 10%;
+
+                .icon{
+                    width: 7%;
+                }
+
+                .txt{
+                    width: 95%;
+                }
+            }
+            .img3{
+                background-color: var(--red-4);
+                height: 90%;
+                border-radius: 26px;
+            }
+
+            .txt3{
+                padding-block-start: 5px;
+                height: 10%;
+            }
+        }
+     }
+
+     .udc-b{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+
+     .udc-b-content{
+        display: flex;
+        width: fit-content;
+        //  align-items: center;
+        //  justify-content: center; 
+         margin-block-start: 10px;       
+         flex-direction: column; 
+     }
+
+    }
+    
+    .check-btn-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+        align-items: center;
+        grid-column-gap: 50px;
+        label{
+            margin-block-start: auto !important;
+            margin-block-end: auto !important;
+        }
+    }
+
+}

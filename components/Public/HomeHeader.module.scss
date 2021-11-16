@@ -1,0 +1,13 @@
+
+.head {
+    height: 50px;
+    // padding: 7px 31px;
+    display: grid;
+    grid-template-columns: 238px 1fr auto auto;
+    grid-column-gap: 40px;
+    border-bottom: var(--border-neutral-2);
+    & > * {
+        display: flex;
+        align-items: center;
+    }
+}

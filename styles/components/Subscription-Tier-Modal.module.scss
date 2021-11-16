@@ -1,0 +1,170 @@
+.main-modal-container{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    // background-color: cadetblue;
+    .mmc-l{
+        // background-color: blueviolet;
+        width: 90%;
+        height: 100%;
+        // padding: 10px;
+        position: relative;
+        overflow: hidden;
+        padding: 22px;
+        // h5,h6{
+        //     // width: fit-content;
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     // background-color: coral;
+        // }
+
+        
+
+        .active-plan-features-container{
+            width: 100%;
+            height: 100%;
+            border-radius: 32px;
+            background-color: #eaf5f0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+            
+
+            .active-plan-price{
+                display: flex;
+                
+                .app-text{
+                    display: flex;
+                    // align-items: center; 
+                    justify-content: center;
+                    // background-color: coral;
+                    
+                    h3,h1{
+                        width: fit-content;
+                    }
+                }
+            }
+
+            .act-pln-mc{
+                width: 100%;
+                height: fit-content;
+                margin-block-start: 70px;
+
+                .act-pln-mc-content{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h6{
+                        width: fit-content;
+                    }
+                }
+            }
+
+            .design{
+                height: 30px;
+                border-radius: 0px 0px 74px 74px !important;
+            }
+
+        }
+
+        .active-plan-features-container>h5{
+            border-radius: 32px 32px 0px 0px;
+        }
+
+        // .active-plan-features-container::after{
+        //     content: "";
+        //     height: 100px;
+        //     width: 100%;
+        //     position: absolute;
+        //     top: 10;
+        //     right: 10px;
+        //     border-radius: 30%;
+        //     overflow: hidden;
+        //     padding: 50px;
+        //     background-color: coral;
+        // }
+
+
+
+    }
+
+    .mmc-r{
+        // background-color: blueviolet;
+        width: 90%;
+        height: 100%;
+        // padding: 10px;
+        position: relative;
+        overflow: hidden;
+        padding: 22px;
+        // h5,h6{
+        //     // width: fit-content;
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     // background-color: coral;
+        // }
+
+        
+
+        .active-plan-features-container-r{
+            width: 100%;
+            height: 100%;
+            border-radius: 32px;
+            background-color: #eaf5f0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+            
+            
+
+            .active-plan-price-r{
+                display: flex;
+                
+                .app-text-r{
+                    display: flex;
+                    // align-items: center; 
+                    justify-content: center;
+                    // background-color: coral;
+                    
+                    h3,h1{
+                        width: fit-content;
+                    }
+                }
+            }
+
+            .act-pln-mc-r{
+                width: 100%;
+                height: fit-content;
+                margin-block-start: 70px;
+
+                .act-pln-mc-content-r{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h6{
+                        width: fit-content;
+                    }
+                }
+            }
+
+            .design-r{
+                height: 30px;
+                border-radius: 0px 0px 74px 74px !important;
+            }
+
+        }
+
+        .active-plan-features-container-r>h5{
+            border-radius: 32px 32px 0px 0px;
+        }
+
+    }
+
+}

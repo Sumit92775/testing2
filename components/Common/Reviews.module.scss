@@ -1,0 +1,100 @@
+.card {
+    padding-left: 20px;
+    padding-right: 20px;
+    .card-title, .card-actions {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+    }
+    .card-details {
+        padding-top: 30px;
+    }
+    .card-actions {
+        margin-top: 15px;
+    }
+}
+
+.reviews-filter-container {
+    display: grid;
+    grid-template-columns: auto 2fr;
+    grid-column-gap: 25px;
+    .reviews, .filter-container {
+        border: var(--border-neutral-2);
+        box-sizing: border-box;
+        border-radius: var(--card-border-radius);
+    }
+}
+
+.review-filters {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-column-gap: 20px;
+}
+
+.filter-container {
+    padding: 23px 28px;
+    max-width: 350px;
+
+    .review-filters {
+        margin-top: 20px;
+        li {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.review-container {
+    padding: 0 20px;
+}
+.reivew {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    grid-column-gap: 10px;
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: var(--border-neutral-2);
+    // &:last-child {
+    //     border-bottom: none;
+    // }
+    .review-header {
+        margin-bottom: 5px;
+        .user-name {
+            float: left;
+            margin-right: 10px;
+        }
+    }
+    .review-comment {
+        line-height: 20px;
+        margin-bottom: 12px;
+    }
+    .review-footer {
+        color: var(--light-neutral-1);
+    }
+
+    &.have-replies {
+        border-bottom: none;
+        padding-bottom: 0;
+        & > ul > li {
+            border-bottom: var(--border-neutral-2);
+            
+        }
+    }
+
+    ul.reviews {
+        margin-top: 20px;
+        border-top: var(--border-neutral-2);
+        .review {
+            padding-top: 10px;
+        }
+    }
+}
+
+.reviewed-requests-container {
+    display: grid;
+    width: 400px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-column-gap: 40px;
+}
+

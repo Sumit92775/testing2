@@ -1,0 +1,32 @@
+.container{ 
+    display: flex;
+    // align-items: center;
+    flex-direction: column;
+    padding-block-start: 20px;
+    padding-inline: 30px;
+
+    .password-input{
+
+        height: 55px;
+        border-radius: 6px;
+        margin-block-start: 9px;
+        margin-block-end: 5px;
+    }
+
+    span{
+        width: fit-content;
+        cursor: pointer;
+    }
+    
+    span:hover{
+       cursor: pointer;
+    }
+
+    Button{
+        width: fit-content;
+        span{
+            color: white !important;
+        }
+    }
+
+}

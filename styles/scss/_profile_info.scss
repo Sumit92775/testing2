@@ -1,0 +1,6 @@
+.uploaded-documents {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    grid-column-gap: 45px;
+    grid-row-gap: 45px;
+}

@@ -1,0 +1,66 @@
+.ant-collapse {
+    .ant-collapse-header {
+        position: relative;
+        .ant-collapse-arrow {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .ant-collapse-extra {
+            position: absolute;
+            width: auto;
+            right: 10px;
+            top: 0;
+            line-height: 46px;
+            height: 46px;
+            transition: transform 0.24s, -webkit-transform 0.24s;
+            .material-icons {
+                line-height: inherit;
+            }
+        }
+    }
+
+    .ant-collapse-item {
+        &.ant-collapse-item-active {
+            .ant-collapse-header {
+                .ant-collapse-extra {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+
+    }
+
+    &.filteration-bar {
+        & > .ant-collapse-item {
+            & > .ant-collapse-content > .ant-collapse-content-box {
+                padding-block-start: 5px;
+                padding-inline-end: 0;
+                padding-block-end: 0;
+            }
+        }
+        .ant-collapse-header {
+            padding-bottom: 0;
+            padding-right: 0;
+        }
+    }
+
+    &.faqs {
+        .ant-collapse-header {
+            padding-block: 0;
+        }
+        .ant-collapse-content-box {
+            padding-top: 0;
+            p {
+                margin: 0;
+            }
+        }
+        
+        .ant-collapse-item:where(:not(:first-child)) {
+            .ant-collapse-header {
+                margin-block-start: 40px;
+            }
+        }
+    }
+}

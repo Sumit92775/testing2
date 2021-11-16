@@ -1,0 +1,30 @@
+.stats-bar {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-block: 30px;
+    border-bottom: var(--border-primary-1);
+    border-bottom-width: 2px;
+    .stats {
+        display: flex;
+        justify-content: space-around;
+        // width: auto;
+        // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        & > * {
+            float: none;
+            max-width: 300px;
+        }
+        .stat {
+            text-align: left; 
+            position: relative;
+            padding-left: 40px;
+            .stat-value {}
+            .stat-label {}
+            .stat-icon {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+}

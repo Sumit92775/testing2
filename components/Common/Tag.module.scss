@@ -1,0 +1,14 @@
+.tag {
+    height: 50px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    padding: 0 12px 0 14px;
+    font-weight: 400;
+    border: var(--border-dark-neutral-1);
+    border-radius: 32px;
+    &.selected {
+        background-color: var(--dark-neutral-1);
+        color: var(--white)
+    }
+}

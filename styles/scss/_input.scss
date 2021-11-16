@@ -1,0 +1,81 @@
+.ant-form {
+    .ant-form-item-label {
+        .ant-form-item-optional {
+            display: none;
+        }
+        padding-bottom: 2px;
+        & > label {
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+    input {
+        height: 55px;
+        background: var(--white);
+        border: var(--border-2);
+        border-radius: 6px;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 18px;
+        &[type=password] {
+            letter-spacing: 5px;
+            font-size: 22px;
+            padding-top: 12px;
+            padding-left: 15px;
+            &::placeholder {
+                font-size: 16px;
+                letter-spacing: initial;
+            }
+        }
+        &::placeholder {
+            color: var(--light-neutral-2);
+        }
+        &:hover {
+            @extend .shadow-3;
+            border: var(--border-2);
+        }
+        &:focus {
+            @extend .shadow-3;
+            border-color: var(--primary-1)
+        }
+    }
+
+    .ant-form-item-has-error {
+        input {
+            background-color: var(--light-neutral-4);
+            &, &::placeholder {
+                color: var(--red-1);
+            }
+            &:focus {
+                @extend .shadow-3;
+                border-color: var(--red-1);
+            }
+        }
+    }
+    .ant-form-item-explain-error {
+        font-size: 12px;
+    }
+
+    &.medium {
+        input {
+            line-height: 18;
+            height: 30px;
+            padding: 4px 18px;
+        }
+    }
+}
+
+.phone-number .ant-form-item-control-input-content {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-column-gap: 11px;
+}
+
+.verification-code .ant-form-item-control-input-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 21px;
+    input {
+        text-align: center;
+    }
+}

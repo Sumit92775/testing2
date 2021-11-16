@@ -1,0 +1,72 @@
+.ant-form-item {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    &.inline {
+        display: flex;
+        flex-direction: row;
+        .ant-form-item-label label {
+            margin-right: 10px;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        & > div {
+            width: auto;
+        }
+    }
+    // div {
+    //     width: initial;
+    // }
+}
+
+.ant-input-number {
+    width: 100%;
+    border: none;
+    &.ant-input-number-focused {
+        box-shadow: none;;
+    }
+    .ant-input-number-handler-wrap {
+        right: 1px;
+        top: 1px;
+        height: calc(100% - 2px);
+        border-radius: 0 5px 5px 0;
+    }
+}
+
+.ant-form.ant-form-item-label>label::after{
+    color: var(--dark-neutral-4);
+    content: none;
+}
+
+.ant-form {
+    .ant-form-item-label {
+        text-align: left;
+        content: none;
+        color: var(--dark-neutral-4);
+
+
+
+        label::after{
+            content: none;
+        }
+    }
+}
+
+.ant-checkbox-wrapper {
+    &:hover, & {
+        .ant-checkbox {
+            .ant-checkbox-inner {
+                border-color: var(--input-icon-1);
+            }
+            &.ant-checkbox-checked {
+                .ant-checkbox-inner {
+                    background-color: var(--dark-neutral-1);
+                    border-color: var(--dark-neutral-1);
+                }
+            }
+            &:after {
+                border-color: var(--dark-neutral-1);
+            }
+        }
+    }
+}

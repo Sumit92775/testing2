@@ -1,0 +1,26 @@
+.ant-pagination {
+    float: left;
+    width: 100%;
+    margin: 46px 0; 
+    .ant-pagination-item-link, .ant-pagination-item {
+        border: none;
+        border-radius: 100%;
+        font-weight: bold;
+        color: var(--dark-neutral-4);
+        a {
+            color: inherit;
+        }
+        &:not(:disabled):not(.ant-pagination-item-active):hover {
+            color: var(--primary-1);
+            background: var(--primary-3);
+        }
+        &.ant-pagination-item-active {
+            background-color: var(--primary-1);
+            color: var(--white);
+            pointer-events: none;
+        }
+        &:disabled {
+            color: var(--light-neutral-2)
+        }
+    }
+}

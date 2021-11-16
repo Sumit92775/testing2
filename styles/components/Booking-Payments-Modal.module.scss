@@ -1,0 +1,11 @@
+.allowed-to-booking-container{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-column-gap: 28px;
+    .input-number-form-item{
+        input{
+            height: 43px !important;
+        }
+    }
+}

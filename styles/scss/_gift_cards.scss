@@ -1,0 +1,21 @@
+.gift-card {
+    @extend .shadow-3;
+    border-radius: var(--card-border-radius);
+    padding: 0 17px;
+    border: var(--border-neutral-3);
+    display: grid;
+    grid-template-rows: auto 1fr auto auto auto auto;
+    & > div {
+        border-bottom: var(--border-neutral-3);
+        padding: 14px 10px;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    .gift-card-header {
+        display: grid;
+        grid-template-columns: auto auto auto 1fr auto;
+        align-items: center;
+        column-gap: 10px;
+    }
+}

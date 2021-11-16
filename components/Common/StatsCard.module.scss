@@ -1,0 +1,25 @@
+.stats-card {
+    padding: 20px 15px;
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--shadow-3);
+    border-width: 1px;
+    border-style: solid;
+    &.primary {
+        border-color: var(--primary-1);
+        .stats-card-icon {
+            color: var(--primary-1);
+        }
+    }
+    &.secondary {
+        border-color: var(--secondary-1);
+        .stats-card-icon {
+            color: var(--secondary-1);
+        }
+    }
+    &.danger {
+        border-color: var(--red-1);
+        .stats-card-icon {
+            color: var(--red-1);       
+        }
+    }
+}

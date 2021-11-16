@@ -1,0 +1,55 @@
+.ant-picker {
+    border: none;
+    padding: 0;
+    .ant-picker-input {
+        position: relative;
+        input {
+            padding-right: 40px;
+            &[title*="-"] {
+                padding-right: 65px;
+            }
+        }
+    }
+    
+    &.ant-picker-range {
+        border: var(--border-2);
+        border-radius: 6px;
+        padding-inline: 1.142rem;
+
+        .ant-picker-input {
+            input {
+                padding-inline: 0;
+            }
+        }
+
+        .ant-picker-suffix {
+            position: static;
+        }
+        
+        .ant-picker-range-separator {
+            width: auto;
+        }
+        input {
+            border: none;
+            &:hover, &:focus {
+                box-shadow: none;
+                border: none;
+            }
+        }
+    }
+
+    .ant-picker-suffix {
+        position: absolute;
+        right: 15px;
+    }
+    .ant-picker-clear {
+        right: 40px;
+    }
+    &.ant-picker-focused {
+        box-shadow: none;
+    }
+}
+
+.ant-picker-dropdown {
+    width: initial;
+}

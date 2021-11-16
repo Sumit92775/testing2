@@ -1,0 +1,75 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark-neutral-1: #212A41;
+    --dark-neutral-2: #2F374B;
+    --dark-neutral-3: #444D62;
+    --dark-neutral-4: #596379;
+    --primary-active: #0a7cb1;
+    --primary-1: #19B5FE;
+    --primary-2: #52C8FF;
+    --primary-3: #A6E3FF;
+    --primary-4: #D2F1FF;
+    --secondary-active: #f5af00;
+    --secondary-1: #FFCB4A;
+    --secondary-2: #FFD672;
+    --secondary-3: #FFE7AD;
+    --secondary-4: #FFF1CF;
+    --green-1: #219653;
+    --green-2: #3DBB73;
+    --green-3: #7EE9AC;
+    --green-4: #D3FFE6;
+    --red-active: #dd1f1f;
+    --red-1: #EB5757;
+    --red-2: #FF8E8E;
+    --red-3: #FFAEAE;
+    --red-4: #FFE1E1;
+    --light-neutral-1: #A8AEBC;
+    --light-neutral-2: #CBCFD8;
+    --light-neutral-3: #E8EAEF;
+    --light-neutral-4: #F8F8F8;
+    --input-icon-1: #DADADA;
+    --gray-1: #333333;
+    --gray-3: #828282;
+    --gray-5: #E0E0E0;
+    
+    --border-2: 1px solid #C0CCDA;
+    --border-primary-1: 1px solid var(--primary-1);
+    --border-dark-neutral-1: 1px solid var(--dark-neutral-1);
+    --border-neutral-1: 1px solid var(--light-neutral-1);
+    --border-neutral-2: 1px solid var(--light-neutral-2);
+    --border-neutral-3: 1px solid var(--light-neutral-3);
+    --border-neutral-4: 1px solid var(--light-neutral-4);
+    --border-dark-1: 1px solid var(--dark-neutral-1);
+    --border-dark-2: 1px solid var(--dark-neutral-2);
+    --border-dark-3: 1px solid var(--dark-neutral-3);
+    --border-dark-4: 1px solid var(--dark-neutral-4);
+    --border-grey-5: 1px solid var(--gray-5);
+    --page-bg: #ebebeb;
+    
+    --card-border-radius: 15px;
+    --font-11: 11px;
+    
+    --shadow-1: 0px -2px 5px rgba(242, 242, 242, 0.25), 0px 4px 8px #F2F2F2;
+    --shadow-2: 0px -3px 5px rgba(242, 242, 242, 0.25), 0px 8px 10px #F2F2F2;
+    --shadow-3: 10px 10px 15px rgba(198, 198, 198, 0.2), -5px -5px 10px rgba(198, 198, 198, 0.15);
+    --shadow-4: 0px -3px 5px rgba(242, 242, 242, 0.25), 0px 13px 10px #F2F2F2;
+}
+
+.border-bottom {
+    border-bottom: var(--border-neutral-2)
+}
+.shadow-1 {
+    // background-color: #C4C4C4;
+    box-shadow: 0px -2px 5px rgba(242, 242, 242, 0.25), 0px 4px 8px #F2F2F2;
+}
+.shadow-2 {
+    // background-color: #C4C4C4;
+    box-shadow: 0px -3px 5px rgba(242, 242, 242, 0.25), 0px 8px 10px #F2F2F2;
+}
+.shadow-3 {
+    box-shadow: 10px 10px 15px rgba(198, 198, 198, 0.2), -5px -5px 10px rgba(198, 198, 198, 0.15);
+}
+.shadow-4 {
+    box-shadow: 0px -3px 5px rgba(242, 242, 242, 0.25), 0px 13px 10px #F2F2F2;
+}

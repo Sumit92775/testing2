@@ -1,0 +1,22 @@
+.share-giftcard-modal-container{
+    
+    input{
+        height : 43px !important;
+        background-color: var(--light-neutral-3) !important;
+    }
+
+    .last-input{
+        display: grid;
+        grid-template-columns : 0.2fr 2fr 1fr;
+        grid-column-gap: 20px;
+    }
+
+}
+
+.res-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-block-start: 30px;
+}

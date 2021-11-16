@@ -1,0 +1,20 @@
+.success-icon {
+    display: inline-block;
+    width: 47px;
+    height: 37px;
+    background-image: url(/success-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    // &:before, &:after {
+    //     font-family: 'Material Icons';
+    //     font-size: 47px;
+    //     font-weight: bolder;
+    //     content: 'check';
+    //     color: var(--primary-1);
+    // }
+    // &:after {
+    //     color: var(--secondary-1);
+    //     margin-left: 7px;
+    // }
+}

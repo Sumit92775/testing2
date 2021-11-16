@@ -1,0 +1,80 @@
+.anpa-container-content{
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-row-gap: 20px;
+    border-radius: 15px;
+
+    div{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    strong{
+        color: var(--dark-neutral-2);
+    }
+
+    span{
+        // font-size: 11px;
+        color: #272D3A;
+    }
+    
+    .inside-form{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 40px;
+        margin-block-end: 19px;
+
+        label{
+            font-size: 11px;
+        }
+    }
+
+    .inside-form-another{
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 40px;
+        margin-block-end: 25px;
+        width: 48%;
+
+        .mobile-number-input{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 25px;    
+        }
+    
+    }
+
+    .mobile-number-input{
+        display: grid;
+        grid-template-columns: 20% auto;
+        grid-column-gap: 25px;
+    }
+
+
+}
+
+.bottom-btn-container{
+    padding-inline-start: 32px;
+    padding-inline-end: 27px;
+    margin-block-end: 17px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    
+    .float-to-right{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+   
+        span{
+            color: var(--dark-neutral-2);
+            strong{
+                color: var(--dark-neutral-2);
+            }
+        }
+    
+    }
+
+}

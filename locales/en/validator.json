@@ -1,0 +1,5 @@
+{
+    "minLengthValidator": "{{ field }} must be at least {{ count }} characters",
+    "email": "{{ field }} is not a valid email!",
+    "required": "{{ field }} is required!"
+}

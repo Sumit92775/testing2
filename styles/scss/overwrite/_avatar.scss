@@ -1,0 +1,6 @@
+.ant-avatar-square {
+    border-radius: var(--card-border-radius);
+    &.profile-thumb-img {
+        box-shadow: var(--shadow-4);
+    }
+}

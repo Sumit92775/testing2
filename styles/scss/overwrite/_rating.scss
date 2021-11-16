@@ -1,0 +1,33 @@
+.ant-rate {
+    line-height: 20px;
+    height: 20px;
+    width: auto;
+    .ant-rate-star {
+        .anticon {
+            font-size: 15px;
+            color: var(--secondary-1);
+        }
+    }
+    @for $i from 8 through 20 {
+        &.fz-#{$i} .ant-rate-star .anticon {
+            font-size: #{$i}px;
+        }
+    }
+
+    &.small {
+        float: left;
+        height: 10px;
+        line-height: 10px;
+        .ant-rate-star {
+            .anticon {
+                font-size: 8px;
+            }
+        }
+    }
+
+    &.custom-color {
+        .ant-rate-star .anticon {
+            color: inherit;
+        }
+    }
+}

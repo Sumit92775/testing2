@@ -1,0 +1,6 @@
+.ant-upload {
+    &.ant-upload-select-picture-card {
+        border-radius: var(--card-border-radius);
+        background: var(--white);
+    }
+}

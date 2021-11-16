@@ -1,0 +1,18 @@
+.layout {
+    &.three-rows {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        min-height: 100vh;
+        & > * {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+    }
+}
+
+.service-details-page-content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-column-gap: 40px;
+    padding: 30px;
+}

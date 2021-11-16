@@ -1,0 +1,28 @@
+.banner {
+    position: relative;
+    background-color: var(--light-neutral-3);
+    min-height: 288px;
+    border-radius: 17px;
+
+    &.banner-main {
+        border-radius: 0;
+    }
+    
+    &.home {
+        height: 650px;
+    }
+
+    &.banner-2 {
+        height: 479px;
+    }
+    &.banner-3 {
+        height: 288px;
+    }
+
+    .overlay-content {
+        position: absolute;
+        padding: 70px 55px;
+        left: 0;
+        bottom: 0;
+    }
+}

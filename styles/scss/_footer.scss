@@ -1,0 +1,89 @@
+footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-top: var(--border-neutral-2);
+    padding: 0;
+    // padding-top: 30px;
+}
+.footer-menus {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 35px;
+    padding: 35px;
+}
+.menu-group {
+    .menu-group-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        color: var(--black)
+    }
+
+    .ant-menu-item {
+        padding: 0;
+        margin: 0 !important;
+        font-size: 11px;
+        line-height: 19px;
+        height: 19px;
+        &.ant-menu-item-selected {
+            background-color: transparent;
+        }
+    }
+}
+
+.main-footer {
+    display: grid;
+    grid-template-columns: auto auto auto 1fr auto;
+    grid-column-gap: 59px;
+    color: var(--dark-neutral-4);
+    // grid-column-start: 1;
+    // grid-column-end: 3;
+    border-top: var(--border-neutral-2);
+    padding: 0 35px;
+    height: 60px;
+    align-items: center;
+    font-size: 11px;
+    // padding-top: 30px;
+    .footer-actions {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 47px;
+    }
+    .language {
+        .ant-menu-submenu {
+            padding-right: 0;
+            &:after {
+                display: none;
+            }
+        }
+        .ant-menu-submenu-title {
+            display: grid;
+            align-items: center;
+            grid-template-columns: auto auto;
+            grid-column-gap: 5px;
+            font-size: 14px;
+            text-decoration: underline;
+            display: flex;
+            line-height: initial;
+            .ant-menu-title-content {
+                margin-left: 0;
+            }
+        }
+        svg {
+            font-size: 20px;
+        }
+    }
+    .social-media {
+        display: grid;
+        grid-template-columns: repeat(4, 16px);
+        grid-column-gap: 13px;
+        align-items: center;
+        a {
+            display: flex;
+        }
+        svg {
+            font-size: 16px;
+        }
+    }
+}

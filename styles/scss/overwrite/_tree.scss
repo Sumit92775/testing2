@@ -1,0 +1,29 @@
+.ant-tree {
+    &.no-switcher {
+        .ant-tree-switcher {
+            display: none;
+        }
+    }
+
+    .ant-tree-checkbox {
+        &.ant-tree-checkbox-checked {
+            .ant-tree-checkbox-inner {
+                background-color: var(--dark-neutral-1);
+                border-color: var(--dark-neutral-1);
+            }
+        }
+    }
+
+    &.right-switcher {
+        .ant-tree-treenode {
+            position: relative;
+            .ant-tree-switcher {
+                position: absolute;
+                right: 12px;
+                .anticon {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

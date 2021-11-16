@@ -1,0 +1,53 @@
+.container{
+    padding: 20px;
+    
+    Input{
+        height: 43px !important;
+    }
+    
+    .days-container{
+        display: grid;
+        width: 56%;
+        grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+        margin-block-start: 23px;
+    
+        div{
+            height: 50px;
+            width: 50px;
+            background-color: var(--light-neutral-2);
+            border-radius: 3px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        
+        
+    }
+    
+    .timing-container{
+        width: 69%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        grid-column-gap: 5px;
+    
+        div{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    }
+    
+    .bottom-btn-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        Input{
+            width: 86%;
+        }
+    
+        Button{
+            width: 10%;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.ant-tooltip {
+    font-size: 12px;
+    line-height: 18px;
+    filter: drop-shadow(10px 10px 15px rgba(198, 198, 198, 0.2)) drop-shadow(-5px -5px 10px rgba(198, 198, 198, 0.15));
+    .ant-tooltip-inner {
+        background-color: var(--white);
+        color: var(--dark-neutral-1);
+        border: 1px solid var(--primary-1);
+        border-radius: 5px;
+        box-shadow: none;
+    }
+    .ant-tooltip-arrow {
+        overflow: hidden;
+        z-index: 9;
+        top: -4px;
+    }
+    .ant-tooltip-arrow-content {
+        box-shadow: none;
+        width: 0px;
+        height: 0px;
+        background-color: var(--white);
+        border: 1px solid var(--primary-1);
+
+    }
+}

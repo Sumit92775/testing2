@@ -1,0 +1,108 @@
+.upload-image-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row !important;
+    margin-block-start: 20px;
+}
+
+.main-content-container{
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+}
+
+.anpa-container-content{
+    height: fit-content;
+    border-radius: 15px;
+
+    div{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    strong{
+        color: var(--dark-neutral-2);
+    }
+
+    span{
+        // font-size: 11px;
+        color: #272D3A;
+    }
+    
+    .inside-form{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 40px;
+        margin-block-end: 19px;
+
+        label{
+            font-size: 11px;
+        }
+    }
+
+    .inside-form-another{
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 40px;
+        margin-block-end: 25px;
+        width: 48%;
+
+        .mobile-number-input{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 25px;    
+        }
+    
+    }
+
+    .mobile-number-input{
+        display: grid;
+        grid-template-columns: 20% auto;
+        grid-column-gap: 25px;
+    }
+
+}
+
+.add-address-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.scrollable-flex-design{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-inline-start: 10px;
+    gap: 10px;
+}
+
+.address-div{
+    width: fit-content;
+    height: 100%;
+    margin: 5px;
+    position: relative;
+}
+
+.scrollable-flex-design::-webkit-scrollbar {
+    display: none;
+}
+
+.text-overflow{
+    text-overflow: ellipsis;
+    overflow: hidden !important;
+    height: 60px !important;
+}
+// .text-overflow::after{
+//     content: "...";
+//     position: absolute;
+//     right: -12px; 
+//     bottom: 4px;
+// }
+
+.card-no-shadow{
+    box-shadow: none !important;
+}

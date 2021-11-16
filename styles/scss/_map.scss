@@ -1,0 +1,18 @@
+.map-placeholder {
+    border-radius: var(--card-border-radius);
+    background-color: var(--light-neutral-4);
+    min-height: 250px;
+    position: relative;
+    overflow: hidden;
+    &:before {
+        content: 'Map Placeholder';
+        font-size: 50px;
+        position: absolute;
+        color: var(--light-neutral-3);
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

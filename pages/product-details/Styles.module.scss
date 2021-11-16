@@ -1,0 +1,65 @@
+.address-container{
+    padding: 20px;
+    input{
+        height: 54px;
+
+    }
+    h6{
+        cursor: pointer;
+    }
+}
+
+.no-padding-modal{
+    background-color: red;
+    .ant-modal-body{
+        background-color: aquamarine;
+    }
+}
+
+.myLocationIcon{
+    position: absolute;
+    left: 1px;
+    top: 10px;
+    left: 10px;
+    background: black;
+    color: white;
+    width: fit-content;
+    padding-block-start: 5px;
+    padding-inline: 5px;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.time-container{
+    // display: grid;
+    // width: 56%;
+    // grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    // margin-block-start: 23px;
+
+    // div{
+        height: 50px;
+        width: 65px;
+        background-color: var(--light-neutral-2);
+        border-radius: 3px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    // }
+
+    
+    
+}
+
+.selectedTimeSlot{
+    background-color: var(--dark-neutral-1);
+    color: white;
+}
+
+.unselectedTimeSlot{
+    background-color: var(--light-neutral-2);
+    color: black;
+}
+
+.auto-width{
+    width: auto;
+}

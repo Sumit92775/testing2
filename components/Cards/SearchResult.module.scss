@@ -1,0 +1,88 @@
+.item {
+    display: grid;
+    grid-template-columns: 470px 1fr;
+    grid-column-gap: 20px;
+    box-shadow: var(--shadow-1);
+    position: relative;
+
+    .item-sponsored {
+        position: absolute;
+        background-color: var(--primary-1);
+        color: var(--white);
+        padding-block: 6px;
+        padding-inline: 11px;
+        line-height: 16px;
+        font-weight: 400;
+        border-radius: 5px;
+        z-index: 1;
+    }
+
+    .item-image {
+        background-color: var(--light-neutral-1);
+        position: relative;
+        z-index: 0;
+        .item-image-info {
+            position: absolute;
+            inset-block: 15px;
+            inset-inline: 20px;
+            z-index: 9;
+            width: auto;
+        }
+    }
+
+    .image-strip {
+        position: absolute;
+        right: -10px;
+        bottom: -10px;
+        // float: inline-end;
+        // width: auto;
+        width: calc(100% + 20px);
+        display: flex;
+        flex-wrap: wrap;
+        text-align: right;
+        pointer-events: none;
+        & > div {
+            position: relative;
+            height: 40px;
+            width: 50px;
+            border-radius: 5px;
+            border: var(--border-neutral-4);
+            overflow: hidden;
+            margin: 10px;
+            float: right;
+            & > * {
+                pointer-events: none;
+            }
+        }
+        .selected {
+            border-color: var(--secondary-1);
+        }
+    }
+    .item-likes {
+        line-height: 30px;
+        color: white;
+        .item-likes-icon {
+            background-color: var(--red-1);
+            color: currentColor;
+            font-size: 14px;
+            width: 32px;
+            height: 32px;
+            text-align: center;
+            line-height: 28px;
+            margin-right: 8px;
+        }
+    }
+
+    .item-info {
+        padding-inline: 20px;
+        padding-block-start: 20px;
+        padding-block-end: 30px;
+    }
+
+    .item-offers {
+        li {
+            border-bottom: var(--border-neutral-3);
+            padding-block: 8px;
+        }
+    }
+}

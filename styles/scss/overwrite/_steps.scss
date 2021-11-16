@@ -1,0 +1,49 @@
+.ant-steps {
+    div {
+        width: initial;
+    }
+    .ant-steps-item-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .ant-steps-item-icon {
+            margin: 0;
+            font-size: 22px;
+            width: 22px;
+            height: 22px;
+        }
+        .ant-steps-item-title {
+            padding: 0;
+            position: static;
+            font-size: 14px;
+            height: 18px;
+            line-height: 18px;
+            margin-top: 4px;
+            &:after {
+                background-color: var(--light-neutral-3) !important;
+            }
+        }
+    }
+    .ant-steps-item {
+        &:not(:last-child) {
+            .ant-steps-item-container {
+                padding-right: 15px;
+            }
+        }
+        &.ant-steps-item-finish {
+            .ant-steps-item-icon .ant-steps-icon,
+            .ant-steps-item-content .ant-steps-item-title {
+                color: var(--primary-1);
+                &:after {
+                    background-color: var(--primary-1) !important;
+                }
+            }
+        }
+        &.ant-steps-item-process {
+            .ant-steps-item-icon .ant-steps-icon,
+            .ant-steps-item-content .ant-steps-item-title {
+                color: var(--dark-neutral-1);
+            }
+        }
+    }
+}

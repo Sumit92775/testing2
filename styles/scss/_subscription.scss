@@ -1,0 +1,195 @@
+.subscriptions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 57px;
+    padding-left: 273px;
+    max-width: 1400px;
+    margin: auto;
+    float: none;
+}
+.subscription-card {
+    border: var(--border-2);
+    width: auto;
+    padding: 28px 35px;
+    border-radius: 14px;
+    @extend .shadow-2;
+    background-color: var(--white);
+    &.premium {
+        border-color: var(--secondary-1);
+        @extend .shadow-4;
+    }
+    .subscription-price {}
+    .subscription-desc {
+        white-space: pre-line;
+    }
+    .subscription-title {
+        margin-top: 22px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 80px;
+            border-bottom: var(--border-neutral-1);
+            left: 0;
+            top: -11px;
+        }
+    }
+    .subscription-sub-title {
+        font-weight: 700;
+        margin-top: 14px;
+        text-transform: uppercase;
+    }
+    div.subscription-features {
+        position: relative;
+        margin-top: 33px;
+        margin-bottom: 145px;
+        li {
+            &:not(:last-child) {   
+                margin-bottom: 25px;
+            }
+        }
+        .subscription-features-names{
+            padding: 57px 51px;
+            margin: 0;
+            margin-left: -35px;
+            margin-top: -57px;
+            position: absolute;
+            transform: translateX(-100%);
+            list-style: none;
+            white-space: nowrap;
+            border: var(--border-neutral-1);
+            border-radius: 14px 0 0 14px;
+            display: none;
+        }
+        .subscription-features-values {
+            padding: 0;
+            li {
+                list-style: none;
+                padding-left: 3px;
+                height: 19px;
+                &:before {
+                    font-family: 'Material Icons';
+                    content: 'check';
+                    width: 14px;
+                    text-align: center;
+                    margin-right: 9px;
+                }
+                &.not-available:before {
+                    content: 'close';
+                }
+            }
+            .not-available {
+                color: var(--light-neutral-1);
+            }
+        }
+    }
+
+    ul.subscription-features {
+        padding: 0;
+        display: grid;
+        width: calc(100% + 257px);
+        margin-left: -257px;
+        grid-template-columns: 222px 1fr;
+        grid-column-gap: 38px;
+        grid-row-gap: 25px;
+        position: relative;
+        margin-top: 33px;
+        margin-bottom: 145px;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 273px;
+            height: calc(100% + (57px * 2));
+            // padding: 57px 51px;
+            border: var(--border-neutral-1);
+            @extend .shadow-1;
+            border-radius: 14px 0 0 14px;
+            left: -51px;
+            top: -57px;
+            border-right: none;
+        }
+        li {
+            list-style: none;
+            padding-left: 3px;
+            padding-left: 23px;
+            position: relative;
+            &:before {
+                font-family: 'Material Icons';
+                content: 'check';
+                width: 14px;
+                text-align: center;
+                // margin-right: 9px;
+                position: absolute;
+                left: 0;
+            }
+            &.not-available:before {
+                content: 'close';
+            }
+        }
+        .not-available {
+            color: var(--light-neutral-1);
+        }
+        .subscription-feature-name {
+            padding-left: 0;
+            &:before {
+                display: none;
+            }
+        }
+    }
+    overflow: hidden;
+
+    &:first-of-type {
+        overflow: visible;
+        div.subscription-features {
+            .subscription-features-names{
+                display: inline-block;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1400px) {
+    .subscriptions {
+        padding-left: 0;
+    }
+    .subscription-card {
+        &:first-of-type, & {
+            overflow: hidden;
+            ul.subscription-features:before {
+                display: none;
+            }
+        }
+        ul.subscription-features {
+            margin-left: 0;
+            width: 100%;
+            grid-template-columns: 1fr 115px;
+            grid-column-gap: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .subscriptions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .subscription-card {
+        width: calc(50% - 50px);
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .subscription-card {
+        width: 80%;
+        max-width: 450px;
+        margin-bottom: 50px;
+        // &, &:first-of-type {
+            ul.subscription-features {
+                grid-template-columns: 1fr 140px;
+            }
+        // }
+    }
+}

@@ -1,0 +1,53 @@
+.reviews {
+    padding: 20px;
+    .ant-list {
+        &.ant-list-vertical {
+            .ant-list-items {
+                width: 100%;
+                .ant-list-item {
+                    display: inline-block;
+                    width: 100%;
+                    @for $i from 0 through 10 {
+                        &.level-#{$i} {
+                            width: calc(100% - #{$i*72}px);
+                            margin-left: #{$i*72}px;
+                        }
+                    }
+                }
+                .ant-list-item-meta {
+                    display: grid;
+                    grid-template-columns: 54px 1fr;
+                    grid-column-gap: 18px;
+                    margin-bottom: 0;
+                    .ant-list-item-meta-content {
+                        width: 100%;
+                        .ant-list-item-meta-title {
+                            margin-bottom: 5px;
+                        }
+                        .ant-list-item-meta-description {
+                            color: var(--dark-neutral-2)
+                        }
+                    }
+                }
+                .ant-list-item-action {
+                    margin-left: 72px;
+                    margin-top: 8px;
+                    li {
+                        font-size: 12px;
+                        color: var(--light-neutral-1)
+                    }
+                    .ant-list-item-action-split {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .review-header {
+        .user-name {
+            float: left;
+            margin-right: 10px;
+        }
+    }
+}
+

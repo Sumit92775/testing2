@@ -1,0 +1,28 @@
+.ant-switch {
+    background: var(--red-1);
+    &:active,
+    &:focus,
+    &:hover {
+        box-shadow: var(--red-4) 0 0 0 2px !important;
+    }
+    .ant-click-animating-node {
+        display: none;
+    }
+    &.default {
+        background-color: var(--light-neutral-3);
+        &:active,
+        &:focus,
+        &:hover {
+            box-shadow: var(--light-neutral-4) 0 0 0 2px !important;
+        }
+    }
+
+    &.ant-switch-checked {
+        background: var(--primary-1);
+        &:active,
+        &:focus {
+            box-shadow: var(--primary-4) 0 0 0 2px;
+        }
+    }
+
+}

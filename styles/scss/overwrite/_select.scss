@@ -1,0 +1,91 @@
+.ant-select {
+
+    &:not(.ant-select-customize-input) {
+        .ant-select-selector {
+            border-radius: 6px;
+        }
+    }
+
+    &, &.ant-select-single {
+        &, &:where(:not(.ant-select-customize-input)) {
+            .ant-select-selector {
+                border: none;
+                padding: 16px 18px;
+                height: 55px;
+                line-height: 22px;
+                border: var(--border-2);
+                font-size: 16px;
+                .ant-select-selection-item, .ant-select-selection-placeholder {
+                    line-height: inherit;
+                }
+                .ant-select-selection-search-input {
+                    height: 100%;
+                    width: 100%;
+                    padding-inline-start: 6px;
+                }
+                &, &:hover {
+                    border: var(--border-2);
+                    .ant-select-selection-search-input {
+                        &:hover, &:active, &:focus {
+                            box-shadow: none;
+                            border: none;
+                        }
+                    }
+                }
+                &:hover {
+                    @extend .shadow-3;
+                }
+            }
+        }
+        &.medium {
+            .ant-select-selector {
+                padding: 4px 18px;
+                height: 30px;
+                line-height: 18px;
+                font-size: 14px;
+            }
+        }
+    }
+    &.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        @extend .shadow-3;
+        border-color: var(--primary-1)
+    }
+
+    &.ant-select-multiple {
+        .ant-select-selection-item {
+            background-color: var(--dark-neutral-2);
+            border-color: var(--dark-neutral-2);
+            color: white;
+            border-radius: 4px;
+            .ant-select-selection-item-remove {
+                color: currentColor;
+            }
+        }
+    }
+
+    &.h43 {
+        .ant-select-selector {
+            height: 43px;
+            padding-block: 7px;
+            padding-inline: 13px;
+            div {
+                width: auto;
+            }
+        }
+    }
+
+    &.medium2 {
+        .ant-select-selector {
+            padding: 5px 18px;
+            height: 32px;
+            line-height: 18px;
+            font-size: 14px;
+        }
+    }
+
+    &.rounded {
+        .ant-select-selector {
+            border-radius: 15px;
+        }
+    }
+}

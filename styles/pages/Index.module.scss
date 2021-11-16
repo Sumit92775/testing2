@@ -1,0 +1,40 @@
+.providers-section {
+    padding: 41px 28px 98px;
+}
+.sponsored-providers {
+    padding: 94px 28px 0;
+}
+
+.search-container{
+    position: absolute;
+    top: 220px;
+    left: 26px;
+    
+    h1,h5{
+        color: white;
+    }
+    
+    h5{
+        margin-block-end: 30px;
+    }
+    
+    .find-container{
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1.7fr 1fr; 
+        height: 55px;
+        display: flex;
+        // justify-content: space-evenly;
+        align-content: center;
+        border-radius: 12px;
+
+        input{
+            border: none;
+        }
+        
+        button{
+            height: 55px;
+            // border-radius: 2px;
+        }
+    }
+}

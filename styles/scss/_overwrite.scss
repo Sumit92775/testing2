@@ -1,0 +1,42 @@
+@import 'overwrite/avatar';
+@import 'overwrite/carousal';
+@import 'overwrite/form';
+@import 'overwrite/message';
+@import 'overwrite/modal';
+@import 'overwrite/pagination';
+@import 'overwrite/picker';
+@import 'overwrite/rating';
+@import 'overwrite/select';
+@import 'overwrite/sider';
+@import 'overwrite/steps';
+@import 'overwrite/switch';
+@import 'overwrite/tabs';
+@import 'overwrite/timeline';
+@import 'overwrite/tooltip';
+@import 'overwrite/accordian';
+@import 'overwrite/tree';
+@import 'overwrite/input';
+@import 'overwrite/upload';
+@import 'overwrite/menu';
+
+.ant-menu-inline,
+.ant-menu-vertical,
+.ant-menu-vertical-left {
+    border: none;
+}
+
+.ant-divider{
+    color: red;
+}
+
+// .mclb-2-setting-list-menus{
+//     .ant-menu{
+//         background-color: none;
+//         background: none;
+//     }
+
+//     .ant-menu-item-selected{
+//         background-color: white !important;
+//         color: var(--primary-1);
+//     }
+// }

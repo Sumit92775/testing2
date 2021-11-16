@@ -1,0 +1,51 @@
+.anpa-container-content{
+    height: fit-content;
+
+    div{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .clr{
+        color: var(--primary-1) !important;
+    }
+
+    .inside-form{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+        grid-column-gap: 40px;
+        margin-block-end: 19px;
+
+        label{
+            font-size: 11px;
+        }
+    }
+
+    .inside-form-another{
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 40px;
+        margin-block-end: 25px;
+        width: 48%;
+
+        label{
+            font-size: 11px;
+        }
+
+        .mobile-number-input{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 25px;    
+        }
+    
+    }
+
+    .mobile-number-input{
+        display: grid;
+        grid-template-columns: 20% auto;
+        grid-column-gap: 25px;
+    }
+
+
+}

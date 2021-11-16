@@ -1,0 +1,27 @@
+.alice-carousel {
+    div {
+        // display: block;
+        width: 100%;
+    }
+}
+
+.ant-carousel {
+    .slick-slider {
+        &.absolute {
+            position: absolute;
+            inset: 0;
+            .slick-list, .slick-track {
+                height: 100%;
+            }
+            .slick-slide {
+                position: relative;
+            }
+        }
+
+        &.hide-dots {
+            .slick-dots {
+                display: none !important;
+            }
+        }
+    }
+}
